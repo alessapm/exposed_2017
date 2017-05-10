@@ -59,13 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     for (let j =0; j < day2events.length; j++){
-      day2events[i].classList.add("hide-day");
+      day2events[j].classList.add("hide-day");
     }
 
-    for (let k =0; k < day2events.length; k++){
-      day2events[i].classList.add("hide-day");
+    for (let k =0; k < day3events.length; k++){
+      day3events[k].classList.add("hide-day");
     }
-
 
 
   });
@@ -74,12 +73,36 @@ document.addEventListener('DOMContentLoaded', () => {
     day2.classList.add('tab-active');
     day1.classList.remove('tab-active');
     day3.classList.remove('tab-active');
+
+    for (let i =0; i < day1events.length; i++){
+      day1events[i].classList.add("hide-day");
+    }
+
+    for (let j =0; j < day2events.length; j++){
+      day2events[j].classList.remove("hide-day");
+    }
+
+    for (let k =0; k < day3events.length; k++){
+      day3events[k].classList.add("hide-day");
+    }
   })
 
  day3.addEventListener('click', ()=> {
     day3.classList.add('tab-active');
     day2.classList.remove('tab-active');
     day1.classList.remove('tab-active');
+
+    for (let i =0; i < day1events.length; i++){
+      day1events[i].classList.add("hide-day");
+    }
+
+    for (let j =0; j < day2events.length; j++){
+      day2events[j].classList.add("hide-day");
+    }
+
+    for (let k =0; k < day3events.length; k++){
+      day3events[k].classList.remove("hide-day");
+    }
   })
 
 
